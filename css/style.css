@@ -1634,7 +1634,7 @@ section h2 {
 
     margin-bottom: 12px;
 
-    color: #4b9b68;
+    color: var(--verde-oscuro);
     font-size: .85rem;
     font-weight: 600;
 }
