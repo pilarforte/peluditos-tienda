@@ -676,6 +676,16 @@ function crearProducto(producto){
 
         <div class="info-producto">
 
+            ${
+                producto.marca
+                    ? `
+                        <span class="marca-producto">
+                            ${producto.marca}
+                        </span>
+                    `
+                    : ""
+            }
+
             <h3>
 
                 ${producto.nombre}
@@ -965,7 +975,6 @@ function abrirModalProducto(id){
 
                 </h2>
 
-
             ${
                 producto.descripcion
                     ? `<p class="detalle-producto-descripcion">${producto.descripcion}</p>`
@@ -988,6 +997,7 @@ function abrirModalProducto(id){
                           `
                         : ""
                 }
+
 
                 <div
                     id="precioModal"
