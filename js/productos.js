@@ -274,12 +274,15 @@ function convertirCSV(csv){
                     columnas[10] || ""
                 ),
 
-
             codigoBarras:
                 columnas[11]
                     ? columnas[11].trim()
-                    : ""
+                    : "",
 
+            descripcionDetallada:
+                columnas[12]
+                    ? columnas[12].trim()
+                    : ""
         };
 
 
