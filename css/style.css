@@ -2246,3 +2246,13 @@ section h2 {
     line-height: 1.6;
     margin-top: 0;
 }
+
+
+.marca-producto {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
