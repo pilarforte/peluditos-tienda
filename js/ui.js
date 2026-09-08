@@ -966,11 +966,30 @@ function abrirModalProducto(id){
                 </h2>
 
 
-                <p class="detalle-producto-descripcion">
+            ${
+                producto.descripcion
+                    ? `
+                        <p class="detalle-producto-descripcion">
 
-                    ${producto.descripcion}
+                            ${producto.descripcion}
 
-                </p>
+                        </p>
+                    `
+                    : ""
+            }
+
+
+            ${
+                producto.descripcionDetallada
+                    ? `
+                        <div class="detalle-producto-descripcion-detallada">
+
+                            ${producto.descripcionDetallada}
+
+                        </div>
+                    `
+                    : ""
+            }
 
 
                 ${
