@@ -2232,3 +2232,13 @@ section h2 {
         font-size: 1rem;
     }
 }
+
+/* ======================================================
+   DESCRIPCIÓN DETALLADA DEL PRODUCTO
+====================================================== */
+
+.detalle-producto-descripcion-detallada {
+    white-space: pre-line;
+    line-height: 1.6;
+    margin-top: 15px;
+}
