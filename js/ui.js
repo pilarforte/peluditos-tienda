@@ -968,29 +968,15 @@ function abrirModalProducto(id){
 
             ${
                 producto.descripcion
-                    ? `
-                        <p class="detalle-producto-descripcion">
-
-                            ${producto.descripcion}
-
-                        </p>
-                    `
+                    ? `<p class="detalle-producto-descripcion">${producto.descripcion}</p>`
                     : ""
             }
-
 
             ${
                 producto.descripcionDetallada
-                    ? `
-                        <div class="detalle-producto-descripcion-detallada">
-
-                            ${producto.descripcionDetallada}
-
-                        </div>
-                    `
+                    ? `<div class="detalle-producto-descripcion-detallada">${producto.descripcionDetallada}</div>`
                     : ""
             }
-
 
                 ${
                     pesos.length > 0
@@ -1002,7 +988,6 @@ function abrirModalProducto(id){
                           `
                         : ""
                 }
-
 
                 <div
                     id="precioModal"
