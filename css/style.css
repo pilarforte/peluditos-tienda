@@ -2237,8 +2237,12 @@ section h2 {
    DESCRIPCIÓN DETALLADA DEL PRODUCTO
 ====================================================== */
 
+.detalle-producto-descripcion {
+    margin-bottom: 1;
+}
+
 .detalle-producto-descripcion-detallada {
     white-space: pre-line;
     line-height: 1.6;
-    margin-top: 7px;
+    margin-top: 0;
 }
