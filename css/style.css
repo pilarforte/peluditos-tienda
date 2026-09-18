@@ -464,6 +464,25 @@ section h2 {
     font-weight: 800;
 }
 
+.etiqueta-oferta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 5px 9px;
+
+    background: #e53935;
+    color: white;
+
+    border-radius: 6px;
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+
+    white-space: nowrap;
+}
+
 /* =========================
    BOTONES PRODUCTO
 ========================= */
@@ -2247,7 +2266,6 @@ section h2 {
     margin-top: 0;
 }
 
-
 .marca-producto {
     display: block;
     font-size: 0.85rem;
@@ -2255,4 +2273,55 @@ section h2 {
     margin-bottom: 3px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+}
+
+/* ======================================================
+   BOTÓN SUBIR A CATEGORÍAS
+====================================================== */
+
+.btn-subir {
+
+    position: fixed;
+
+    bottom: 25px;
+
+    right: 25px;
+
+    width: 50px;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #798642;
+
+    color: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+    z-index: 999;
+
+    transition: 0.3s;
+
+}
+
+
+.btn-subir:hover {
+
+    background: #626d35;
+
+    transform: translateY(-3px);
+
 }
