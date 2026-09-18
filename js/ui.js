@@ -465,6 +465,12 @@ function actualizarPrecioProducto(
 
                 </span>
 
+                <span class="etiqueta-oferta">
+
+                    OFERTA
+
+                </span>
+
             </div>
 
         `;
@@ -482,56 +488,6 @@ function actualizarPrecioProducto(
             </p>
 
         `;
-
-    }
-
-
-    /*
-    ==================================================
-    ACTUALIZAR ETIQUETA OFERTA
-    ==================================================
-    */
-
-    const imagenProducto =
-        card.querySelector(
-            ".imagen-producto"
-        );
-
-
-    if(imagenProducto){
-
-        const etiquetaExistente =
-            imagenProducto.querySelector(
-                ".etiqueta-oferta"
-            );
-
-
-        if(tieneOferta){
-
-            if(!etiquetaExistente){
-
-                imagenProducto.insertAdjacentHTML(
-                    "afterbegin",
-                    `
-                    <span class="etiqueta-oferta">
-                        OFERTA
-                    </span>
-                    `
-                );
-
-            }
-
-        }
-
-        else{
-
-            if(etiquetaExistente){
-
-                etiquetaExistente.remove();
-
-            }
-
-        }
 
     }
 
@@ -592,21 +548,6 @@ function crearProducto(producto){
     let etiquetaOferta = "";
 
 
-    if(tieneOfertaInicial){
-
-        etiquetaOferta = `
-
-            <span class="etiqueta-oferta">
-
-                OFERTA
-
-            </span>
-
-        `;
-
-    }
-
-
     /*
     ==================================================
     BLOQUE PRECIO
@@ -631,6 +572,12 @@ function crearProducto(producto){
                 <span class="precio-nuevo">
 
                     ${ofertaInicial.toFixed(2)} €
+
+                </span>
+
+                <span class="etiqueta-oferta">
+
+                    OFERTA
 
                 </span>
 
@@ -664,8 +611,6 @@ function crearProducto(producto){
     card.innerHTML = `
 
         <div class="imagen-producto">
-
-            ${etiquetaOferta}
 
             <img
                 src="${producto.imagen}"
@@ -1352,5 +1297,34 @@ function mostrarProductos(
         );
 
     });
+
+}
+
+/* ======================================================
+   BOTÓN SUBIR A CATEGORÍAS
+====================================================== */
+
+const btnSubir =
+    document.getElementById("btnSubir");
+
+
+if(btnSubir){
+
+    btnSubir.addEventListener(
+        "click",
+        ()=>{
+
+            document
+                .getElementById("categorias")
+                .scrollIntoView({
+
+                    behavior: "smooth",
+
+                    block: "start"
+
+                });
+
+        }
+    );
 
 }
